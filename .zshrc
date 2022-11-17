@@ -256,5 +256,8 @@ fi
 if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
+
+# javi custom aliases
+alias cat='batcat'
 alias ls='lsd'
-alias config='/usr/bin/git --git-dir=/home/kali/.cfg/ --work-tree=/home/kali'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
