@@ -1,0 +1,6 @@
+new_tab Work
+cd ~
+launch zsh
+new_tab Aux
+cd ~
+launch zsh
