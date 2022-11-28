@@ -261,3 +261,5 @@ fi
 alias cat='batcat'
 alias ls='lsd'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+#alias novpn="ps -ef | grep openvpn | grep -v grep  | awk '{print $2}' | xargs sudokill -9 $1"
+alias  novpn='ps -ef | grep openvpn | grep -v grep  | awk "{print \$2}" | xargs sudo kill -9 $1 1&>2'
