@@ -1,0 +1,11 @@
+new_tab HTB
+cd ~/HTB
+title HTB
+launch zsh
+launch zsh -c 'sudo openvpn ~/.vpns/htb.ovpn'
+launch zsh
+enabled_layouts tall:bias=60;full_size=1;mirrored=false
+
+new_tab Aux
+cd ~
+launch zsh
