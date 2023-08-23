@@ -18,6 +18,8 @@
 |-----------------|---------------|-------------------|
 | Super[^note]  + t |:arrow_forward:	|	 New Tab   |
 | Super  + {1..9}			|:arrow_forward:	|	Change tab to number |
+| Ctrl  + Shift + Tab			|:arrow_forward:	|	Change between Tabs |
+
 
 
 ### Windows:
