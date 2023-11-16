@@ -1,7 +1,7 @@
 # Kitty Config
 
 ## Font
-- Fira Code Medium
+- FiraCode Nerd Font Mono
 ## Background
 - Spirited Away.
 ## Shortcuts/Actions
@@ -16,17 +16,19 @@
 ### Tabs:
 | Shortcut	|	|	Action    |
 |-----------------|---------------|-------------------|
-| Super[^note]  + t |:arrow_forward:	|	 New Tab   |
-| Super  + {1..9}			|:arrow_forward:	|	Change tab to number |
-| Ctrl  + Shift + Tab			|:arrow_forward:	|	Change between Tabs |
+| Super[^note]  + Enter |:arrow_forward:	|	 New Tab   |
+| Super  + º |:arrow_forward:	|	 Rename Tab   |
+| Super  + q |:arrow_forward:	|	 Close Tab   |
+| Alt  + {1..9}			|:arrow_forward:	|	Change tab to number |
+| Ctrl  + Shift + ⬅️ or ➡️			|:arrow_forward:	|	Change between Tabs |
 
 
 
 ### Windows:
 | Shortcut	|	|	Action    |
 |-----------------|---------------|-------------------|
-| Super  + Enter |:arrow_forward:	|	 New Window   |
-| Super + q |:arrow_forward:	|	 Close Window   |
+| Alt  + Enter |:arrow_forward:	|	 New Window   |
+| Alt + q |:arrow_forward:	|	 Close Window   |
 | Ctrl + Tab |:arrow_forward:|	 Next Window   |
 | Alt + :arrow_right:	 |:arrow_forward:	|	 Change Cursor to Right Window   |
 | Alt + :arrow_left:	 |:arrow_forward:	|	 Change Cursor to Left Window   |
