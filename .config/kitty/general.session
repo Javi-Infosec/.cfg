@@ -1,6 +1,21 @@
-new_tab Work
+new_tab Local
 cd ~
 launch zsh
+#new_tab Kali Main
+#cd ~
+#launch zsh -c 'kitty +kitten ssh -X kali@kalivm'
+#new_tab Kali Aux
+#cd ~
+#launch zsh -c 'kitty +kitten ssh -X kali@kalivm'
+#new_tab Kali BG
+#cd ~
+#launch zsh -c 'kitty +kitten ssh -X kali@kalivm'
 new_tab Aux
 cd ~
 launch zsh
+new_tab VPN
+cd ~
+launch zsh
+new_tab Music
+cd ~
+launch zsh -c '/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=ncspot io.github.hrkfdn.ncspot'
