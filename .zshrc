@@ -17,8 +17,8 @@ export PATH="$PATH:$HOME/.local/bin"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
+#ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -109,30 +109,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # javi custom aliases
-alias cat='batcat'
-alias ls='lsd'
+alias bcat='batcat'
+alias  c='clear' # clear terminal
+alias  l='eza -lh  --icons=auto' # long list
+alias ls='eza -1   --icons=auto' # short list
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+alias ld='eza -lhD --icons=auto' # long list dirs
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-#alias novpn="ps -ef | grep openvpn | grep -v grep  | awk '{print $2}' | xargs sudokill -9 $1"
-alias  novpn='ps -ef | grep openvpn | grep -v grep  | awk "{print \$2}" | xargs sudo kill -9 $1 1&>2'
-alias  vpn='sudo openvpn ~/.vpns/htb.ovpn'
-alias pgvpn='sudo openvpn ~/.vpns/PG.ovpn'
-alias startkali='VBoxManage startvm kali-linux-2023.3 --type headless'
-alias stopkali='VBoxManage controlvm kali-linux-2023.3 poweroff '
+#alias  novpn='ps -ef | grep openvpn | grep -v grep  | awk "{print \$2}" | xargs sudo kill -9 $1 1&>2'
+#alias  vpn='sudo openvpn ~/.vpns/htb.ovpn'
+#alias pgvpn='sudo openvpn ~/.vpns/PG.ovpn'
+alias startkali='vmrun start /home/javi/vmware/kali/kali.vmx nogui'
+alias stopkali='vmrun stop /home/javi/vmware/kali/kali.vmx hard'
 alias connectkali='kitty +kitten ssh -X kali@kalivm'
 alias icat='kitty +kitten icat'
-alias ncspot='/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=ncspot io.github.hrkfdn.ncspot'
-port=4444
-#export OPENAI_KEY=
-#export PATH=$PATH:/usr/local/bin
-eval "$(atuin init zsh --disable-up-arrow)"
-#export GOPATH=$HOME/go
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-function tun() {
-    export kaliIP="$(cat /home/javi/.vpns/tunIP)"
-    export kaliPORT=4444
-}
